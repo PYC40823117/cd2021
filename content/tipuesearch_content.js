@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': '組員', 'text': '40823117 潘奕丞 \n 40823122 吳家凱 \n', 'tags': '', 'url': '組員.html'}, {'title': '偕同', 'text': '', 'tags': '', 'url': '偕同.html'}]};
+var tipuesearch = {"pages": [{'title': '組員', 'text': '40823117 潘奕丞 \n 40823122 吳家凱 \n', 'tags': '', 'url': '組員.html'}, {'title': '偕同', 'text': '\n', 'tags': '', 'url': '偕同.html'}]};
