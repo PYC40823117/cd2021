@@ -56,7 +56,82 @@
 <p><span></span></p>
 <h2>W10</h2>
 <h3>task1</h3>
-<h3>task2</h3>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("stage3_2a.txt") as fh:
+   #先將我們存起來stage3_2a.txt打開並命名為fh
+    data = fh.readlines()
+    #將stage3_2a.txt的資料以串列形式存為data
+for i in range(6):
+    #因為只有6組,所以設定次數6次
+    A= data[i].replace('4823122','40823122')
+    #因為40823122的學號打錯了,所以用 replace把4823122換成40823122
+    B=A.replace('\t\t','')
+    #因為有一組只有6人,所以用 replace 把空位刪除
+    group = B.rstrip("\n").split("\t")
+    #先取出newdata list中的第i項,消除元素中\n,再以\t取出需要的文字
+    print('&lt;p&gt;&lt;a href="https://github.com/'+group[1]+'/'+group[0]+'"&gt;'+group[0]+' repo&lt;/a&gt; | &lt;a href="https://'+group[2]+'.github.io/'+group[0]+'"&gt;'+group[0]+' site&lt;/a&gt;&lt;/p&gt;')
+    for j in range(1,18,2):
+    #設一個範圍,從1~18每次+2
+        try:
+            n = group[j].replace('40823112','a40823112')
+            n = group[j].replace('4082312','s40823125')
+            print('&lt;p&gt;'+'&lt;a href="https://github.com/'+n+'/cd2021"&gt;'+group[j]+' repo&lt;/a&gt; | &lt;a href="https://'+n+'.github.io/cd2021"&gt;'+group[j]+' site&lt;/a&gt;&lt;/p&gt;')
+        except:
+           continue
+        #因為其中一組只有六個人會有空格會導致錯誤,所以使用try.....except,讓程式錯誤時執行continue,讓迴圈繼續執行</pre>
+<p></p>
+<p><a href="https://github.com/40823131/stage3_ag1">stage3_ag1 repo</a> | <a href="https://40823131.github.io/stage3_ag1">stage3_ag1 site</a></p>
+<p><a href="https://github.com/40823131/cd2021">40823131 repo</a> | <a href="https://40823131.github.io/cd2021">40823131 site</a></p>
+<p><a href="https://github.com/40823112/cd2021">40823112 repo</a> | <a href="https://40823112.github.io/cd2021">40823112 site</a></p>
+<p><a href="https://github.com/s408231253/cd2021">40823123 repo</a> | <a href="https://s408231253.github.io/cd2021">40823123 site</a></p>
+<p><a href="https://github.com/40823145/cd2021">40823145 repo</a> | <a href="https://40823145.github.io/cd2021">40823145 site</a></p>
+<p><a href="https://github.com/40823136/cd2021">40823136 repo</a> | <a href="https://40823136.github.io/cd2021">40823136 site</a></p>
+<p><a href="https://github.com/40823109/cd2021">40823109 repo</a> | <a href="https://40823109.github.io/cd2021">40823109 site</a></p>
+<p><a href="https://github.com/40823116/cd2021">40823116 repo</a> | <a href="https://40823116.github.io/cd2021">40823116 site</a></p>
+<p><a href="https://github.com/40823108/cd2021">40823108 repo</a> | <a href="https://40823108.github.io/cd2021">40823108 site</a></p>
+<p><a href="https://github.com/40823151/stage3_ag2">stage3_ag2 repo</a> | <a href="https://40823151.github.io/stage3_ag2">stage3_ag2 site</a></p>
+<p><a href="https://github.com/40823151/cd2021">40823151 repo</a> | <a href="https://40823151.github.io/cd2021">40823151 site</a></p>
+<p><a href="https://github.com/40623121/cd2021">40623121 repo</a> | <a href="https://40623121.github.io/cd2021">40623121 site</a></p>
+<p><a href="https://github.com/40871106/cd2021">40871106 repo</a> | <a href="https://40871106.github.io/cd2021">40871106 site</a></p>
+<p><a href="https://github.com/40823102/cd2021">40823102 repo</a> | <a href="https://40823102.github.io/cd2021">40823102 site</a></p>
+<p><a href="https://github.com/40823104/cd2021">40823104 repo</a> | <a href="https://40823104.github.io/cd2021">40823104 site</a></p>
+<p><a href="https://github.com/40823106/cd2021">40823106 repo</a> | <a href="https://40823106.github.io/cd2021">40823106 site</a></p>
+<p><a href="https://github.com/40823101/cd2021">40823101 repo</a> | <a href="https://40823101.github.io/cd2021">40823101 site</a></p>
+<p><a href="https://github.com/40823132/cd2021">40823132 repo</a> | <a href="https://40823132.github.io/cd2021">40823132 site</a></p>
+<p><a href="https://github.com/40823119/stage3_ag3">stage3_ag3 repo</a> | <a href="https://40823119.github.io/stage3_ag3">stage3_ag3 site</a></p>
+<p><a href="https://github.com/40823119/cd2021">40823119 repo</a> | <a href="https://40823119.github.io/cd2021">40823119 site</a></p>
+<p><a href="https://github.com/40823150/cd2021">40823150 repo</a> | <a href="https://40823150.github.io/cd2021">40823150 site</a></p>
+<p><a href="https://github.com/40823103/cd2021">40823103 repo</a> | <a href="https://40823103.github.io/cd2021">40823103 site</a></p>
+<p><a href="https://github.com/40823107/cd2021">40823107 repo</a> | <a href="https://40823107.github.io/cd2021">40823107 site</a></p>
+<p><a href="https://github.com/40523252/cd2021">40523252 repo</a> | <a href="https://40523252.github.io/cd2021">40523252 site</a></p>
+<p><a href="https://github.com/40823154/cd2021">40823154 repo</a> | <a href="https://40823154.github.io/cd2021">40823154 site</a></p>
+<p><a href="https://github.com/40823142/stage3_ag4">stage3_ag4 repo</a> | <a href="https://40823142.github.io/stage3_ag4">stage3_ag4 site</a></p>
+<p><a href="https://github.com/40823142/cd2021">40823142 repo</a> | <a href="https://40823142.github.io/cd2021">40823142 site</a></p>
+<p><a href="https://github.com/40823144/cd2021">40823144 repo</a> | <a href="https://40823144.github.io/cd2021">40823144 site</a></p>
+<p><a href="https://github.com/s408231257/cd2021">40823127 repo</a> | <a href="https://s408231257.github.io/cd2021">40823127 site</a></p>
+<p><a href="https://github.com/40823148/cd2021">40823148 repo</a> | <a href="https://40823148.github.io/cd2021">40823148 site</a></p>
+<p><a href="https://github.com/s408231251/cd2021">40823121 repo</a> | <a href="https://s408231251.github.io/cd2021">40823121 site</a></p>
+<p><a href="https://github.com/40823135/cd2021">40823135 repo</a> | <a href="https://40823135.github.io/cd2021">40823135 site</a></p>
+<p><a href="https://github.com/40823114/cd2021">40823114 repo</a> | <a href="https://40823114.github.io/cd2021">40823114 site</a></p>
+<p><a href="https://github.com/40823146/cd2021">40823146 repo</a> | <a href="https://40823146.github.io/cd2021">40823146 site</a></p>
+<p><a href="https://github.com/40823111/stage3_ag5">stage3_ag5 repo</a> | <a href="https://40823111.github.io/stage3_ag5">stage3_ag5 site</a></p>
+<p><a href="https://github.com/40823111/cd2021">40823111 repo</a> | <a href="https://40823111.github.io/cd2021">40823111 site</a></p>
+<p><a href="https://github.com/40823115/cd2021">40823115 repo</a> | <a href="https://40823115.github.io/cd2021">40823115 site</a></p>
+<p><a href="https://github.com/s408231258/cd2021">40823128 repo</a> | <a href="https://s408231258.github.io/cd2021">40823128 site</a></p>
+<p><a href="https://github.com/s408231250/cd2021">40823120 repo</a> | <a href="https://s408231250.github.io/cd2021">40823120 site</a></p>
+<p><a href="https://github.com/40823140/cd2021">40823140 repo</a> | <a href="https://40823140.github.io/cd2021">40823140 site</a></p>
+<p><a href="https://github.com/s408231254/cd2021">40823124 repo</a> | <a href="https://s408231254.github.io/cd2021">40823124 site</a></p>
+<p><a href="https://github.com/40823139/cd2021">40823139 repo</a> | <a href="https://40823139.github.io/cd2021">40823139 site</a></p>
+<p><a href="https://github.com/s408231256/cd2021">40823126 repo</a> | <a href="https://s408231256.github.io/cd2021">40823126 site</a></p>
+<p><a href="https://github.com/40823152/stage3_ag6">stage3_ag6 repo</a> | <a href="https://40823152.github.io/stage3_ag6">stage3_ag6 site</a></p>
+<p><a href="https://github.com/40823152/cd2021">40823152 repo</a> | <a href="https://40823152.github.io/cd2021">40823152 site</a></p>
+<p><a href="https://github.com/40823110/cd2021">40823110 repo</a> | <a href="https://40823110.github.io/cd2021">40823110 site</a></p>
+<p><a href="https://github.com/s408231252/cd2021">40823122 repo</a> | <a href="https://s408231252.github.io/cd2021">40823122 site</a></p>
+<p><a href="https://github.com/s408231255/cd2021">40823125 repo</a> | <a href="https://s408231255.github.io/cd2021">40823125 site</a></p>
+<p><a href="https://github.com/40823117/cd2021">40823117 repo</a> | <a href="https://40823117.github.io/cd2021">40823117 site</a></p>
+<p><a href="https://github.com/s408231259/cd2021">40823129 repo</a> | <a href="https://s408231259.github.io/cd2021">40823129 site</a></p>
+<p><a href="https://github.com/40823149/cd2021">40823149 repo</a> | <a href="https://40823149.github.io/cd2021">40823149 site</a></p>
+<p><a href="https://github.com/40823153/cd2021">40823153 repo</a> | <a href="https://40823153.github.io/cd2021">40823153 site</a></p>
+<p>參考:40823125</p><h3>task2</h3>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/jt9qcjmZ8iU" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/JXjN2yY5SUk" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/TTgSYfnMAy4" title="YouTube video player" width="560"></iframe></p>
