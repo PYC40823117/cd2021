@@ -1,2 +1,2 @@
 # cmstemplate
- https://40823117.github.io/cd2021/.
+ https://pyc40823117.github.io/cd2021/
